@@ -1,0 +1,9 @@
+[package]
+name = "cordius"
+version = "0.0.1"
+edition = "2024"
+authors = ["Ivaylo D. Y. <randomacc.for1randomthings@gmail.com>"]
+description = "The best Rust library for Discord API"
+
+[dependencies]
+bitflags = "2.9.1"

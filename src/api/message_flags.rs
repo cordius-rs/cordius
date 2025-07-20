@@ -2,6 +2,7 @@ use std::fmt;
 use bitflags::bitflags;
 
 bitflags! {
+  #[derive(Debug)]
   pub struct MessageFlags: u32 {
     const Crossposted = 1 << 0;
     const CROSSPOSTED = 1 << 0;

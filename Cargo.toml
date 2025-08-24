@@ -1,0 +1,16 @@
+[package]
+name = "cordius"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.41", features = ["serde"] }
+dotenvy = "0.15.7"
+reqwest = { version = "0.12.23", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.143"
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
+
+[features]
+default = ["payload"]
+payload = []
